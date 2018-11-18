@@ -2,23 +2,21 @@ class GraphqlController < ActionController::Base
   skip_before_action :verify_authenticity_token
 
   def execute
-    variables = ensure_hash(params[:variables])
-    query = params[:query]
-    operation_name = params[:operationName]
-    context = {
-      # Query context goes here, for example:
-      # current_user: current_user,
-    }
-    result = BackendSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
+    result = BackendSchema.execute(
+      params[:query],
+      variables: ensure_hash(params[:variables]),
+      context: {},
+      operation_name: params[:operationName]
+    )
     render json: result
-  rescue => e
-    raise e unless Rails.env.development?
-    handle_error_in_development e
+  end
+
+  def schema
+    render plain: GraphQL::Schema::Printer.new(BackendSchema).print_schema
   end
 
   private
 
-  # Handle form data, JSON body, or a blank value
   def ensure_hash(ambiguous_param)
     case ambiguous_param
     when String
@@ -34,12 +32,5 @@ class GraphqlController < ActionController::Base
     else
       raise ArgumentError, "Unexpected parameter: #{ambiguous_param}"
     end
-  end
-
-  def handle_error_in_development(e)
-    logger.error e.message
-    logger.error e.backtrace.join("\n")
-
-    render json: { error: { message: e.message, backtrace: e.backtrace }, data: {} }, status: 500
   end
 end
