@@ -1,0 +1,23 @@
+type Artist {
+  bio: String
+  id: Int!
+  name: String!
+  songs: [Song!]!
+}
+
+type Mutation {
+  # An example field added by the generator
+  testField: String!
+}
+
+type Query {
+  artist(id: Int!): Artist!
+  artists: [Artist!]!
+}
+
+type Song {
+  description: String
+  durationInSeconds: Int!
+  id: Int!
+  name: String!
+}
