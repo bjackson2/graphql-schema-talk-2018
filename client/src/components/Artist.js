@@ -1,7 +1,7 @@
-import React from "react";
-import Song from "./Song";
+import React from 'react';
+import Song from './Song';
 
-const Artist = ({ artist: { name, bio, songs } }) => (
+const Artist = ({artist: {name, bio, songs}}) => (
   <div>
     <h2>{name}</h2>
     <h3>Biography</h3>

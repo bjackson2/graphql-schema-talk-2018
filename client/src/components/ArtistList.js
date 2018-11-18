@@ -1,7 +1,7 @@
-import React from "react";
-import { Query } from "react-apollo";
-import gql from "graphql-tag";
-import Artist from "./Artist";
+import React from 'react';
+import {Query} from 'react-apollo';
+import gql from 'graphql-tag';
+import Artist from './Artist';
 
 const ARTISTS_QUERY = gql`
   query ArtistsQuery {
@@ -21,10 +21,8 @@ const ARTISTS_QUERY = gql`
 
 const ArtistList = () => (
   <Query query={ARTISTS_QUERY}>
-    {({ data, loading }) => {
-      if (loading) {
-        return <div>Loading...</div>;
-      }
+    {({data, loading}) => {
+      if (loading) return <div>Loading...</div>;
 
       return (
         <div>

@@ -1,7 +1,7 @@
 module Types
   class QueryType < Types::BaseObject
     field :artist, Types::Artist, null: false do
-      argument :id, Int, required: true
+      argument :id, ID, required: true
     end
 
     field :artists, [Types::Artist], null: false

@@ -1,0 +1,4 @@
+node_modules/
+build/
+graphql/
+/src/serviceWorker.js

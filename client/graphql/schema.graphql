@@ -1,6 +1,6 @@
 type Artist {
   bio: String
-  id: Int!
+  id: ID!
   name: String!
   songs: [Song!]!
 }
@@ -11,13 +11,13 @@ type Mutation {
 }
 
 type Query {
-  artist(id: Int!): Artist!
+  artist(id: ID!): Artist!
   artists: [Artist!]!
 }
 
 type Song {
   description: String
   durationInSeconds: Int!
-  id: Int!
+  id: ID!
   name: String!
 }
