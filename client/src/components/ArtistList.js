@@ -26,12 +26,10 @@ const ArtistList = () => (
 
       return (
         <div>
-          <h1>Artists App</h1>
-          <div>
-            {data.artists.map((artist, index) => (
-              <Artist key={index} artist={artist} />
-            ))}
-          </div>
+          <h2>All artists</h2>
+          {data.artists.map((artist, index) => (
+            <Artist key={index} artist={artist} />
+          ))}
         </div>
       );
     }}

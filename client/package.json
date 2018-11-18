@@ -33,7 +33,7 @@
   ],
   "devDependencies": {
     "babel-plugin-graphql-tag": "^1.6.0",
-    "eslint": "^5.9.0",
+    "eslint": "5.6.0",
     "eslint-config-ezcater-base": "^1.0.1",
     "eslint-config-ezcater-react": "^1.2.0",
     "eslint-plugin-graphql": "^3.0.1"
