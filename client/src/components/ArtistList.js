@@ -13,7 +13,7 @@ const ARTISTS_QUERY = gql`
         id
         name
         description
-        durationInMinutes
+        durationInSeconds
       }
     }
   }
@@ -28,9 +28,12 @@ const ArtistList = () => (
 
       return (
         <div>
-          {data.artists.map(artist => (
-            <Artist artist={artist} />
-          ))}
+          <h1>Artists App</h1>
+          <div>
+            {data.artists.map((artist, index) => (
+              <Artist key={index} artist={artist} />
+            ))}
+          </div>
         </div>
       );
     }}
