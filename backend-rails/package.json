@@ -1,5 +1,11 @@
 {
-  "name": "backend",
+  "name": "backend-rails",
   "private": true,
-  "dependencies": {}
+  "description": "Javascript dependencies for Rails GQL backend",
+  "version": "1.0.0",
+  "author": "Ben Jackson",
+  "license": "ISC",
+  "devDependencies": {
+    "apollo": "^2.1.2"
+  }
 }
