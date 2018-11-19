@@ -1,0 +1,16 @@
+{
+  "name": "backend-js",
+  "version": "1.0.0",
+  "description": "A GraphQL backend implemented using Apollo Server",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm run index.js"
+  },
+  "keywords": ["apollo", "graphql"],
+  "author": "Ben Jackson",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.2.2",
+    "graphql": "^14.0.2"
+  }
+}
