@@ -4,13 +4,17 @@
   "description": "A GraphQL backend implemented using Apollo Server",
   "main": "index.js",
   "scripts": {
-    "run": "npm run index.js"
+    "start": "node index.js"
   },
-  "keywords": ["apollo", "graphql"],
+  "keywords": [
+    "apollo",
+    "graphql"
+  ],
   "author": "Ben Jackson",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.2.2",
+    "apollo-server-express": "^2.2.2",
+    "express": "^4.16.4",
     "graphql": "^14.0.2"
   }
 }

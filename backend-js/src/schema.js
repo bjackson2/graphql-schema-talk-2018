@@ -1,6 +1,4 @@
-const { gql } = require("apollo-server");
-
-module.exports.typeDefs = gql`
+module.exports.schema = `
   type Artist {
     bio: String
     id: ID!
