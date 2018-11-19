@@ -1,0 +1,15 @@
+{
+  "name": "engine-proxy",
+  "version": "1.0.0",
+  "description": "An Apollo Engine proxy",
+  "main": "index.js",
+  "keywords": [
+    "apollo",
+    "engine"
+  ],
+  "author": "Ben Jackson",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-engine": "^1.1.2"
+  }
+}

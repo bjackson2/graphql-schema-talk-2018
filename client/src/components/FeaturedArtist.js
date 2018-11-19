@@ -13,7 +13,7 @@ const FEATURED_ARTIST_QUERY = gql`
 `;
 
 const FeaturedArtist = () => (
-  <Query query={FEATURED_ARTIST_QUERY} variables={{id: 6}}>
+  <Query query={FEATURED_ARTIST_QUERY} variables={{id: 1}}>
     {({data, loading}) => {
       if (loading) return <div>Loading...</div>;
 

@@ -1,7 +1,7 @@
 module.exports.seedData = {
   artists: [
     {
-      id: "6",
+      id: "1",
       name: "The Cars",
       bio:
         "The Cars were an American rock band that emerged from the new wave scene in the late 1970s. The band originated in Boston in 1976, with singer, rhythm guitarist, and songwriter Ric Ocasek; singer, songwriter and bassist Benjamin Orr; lead guitarist Elliot Easton; keyboardist Greg Hawkes; and drummer David Robinson.",
@@ -23,7 +23,7 @@ module.exports.seedData = {
       ]
     },
     {
-      id: "7",
+      id: "2",
       name: "The Modern Lovers",
       bio:
         "The Modern Lovers was an American rock band led by Jonathan Richman in the 1970s and 1980s. The original band existed from 1970 to 1974 but their recordings were not released until 1976 or later. It featured Richman and bassist Ernie Brooks with drummer David Robinson (later of The Cars) and keyboardist Jerry Harrison (later of Talking Heads).",
