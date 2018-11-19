@@ -6,11 +6,6 @@ module.exports.schema = `
     songs: [Song!]!
   }
 
-  type Mutation {
-    # An example field added by the generator
-    testField: String!
-  }
-
   type Query {
     artist(id: ID!): Artist!
     artists: [Artist!]!
